@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap </title>
+    <script >
+        history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+    </script>
+    <style>
+    
+        header{
+            width:100%; 
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+        }
+     
+    </style>
+    
+    </head>
+    <body>
+        
+        <header><center>
+        <div style="font-size: 50pt;color: crimson"><u>Love Percentage</u></div>    
+        <div class="form-group">
+            <p  style="font-size: 25pt;color:darkred">Love between <script>
+                
+                var rit=sessionStorage.getItem("textvalue");       
+                document.write(rit);
+
+                </script>&nbsp;&nbsp;and
+                <script>
+                    var ll=sessionStorage.getItem("textval");       
+                document.write(ll);
+                </script>  is</p>
+        <input style="height: 80px;font-size: 50pt;width: 150px;border-color: crimson;border-width: thick"type="text" name="" class="form-control text-center w-50 h-20 m-auto" id="lovevalue" placeholder="Love Percentage">
+            </div>
+            </center><div align="right">
+        <a href="love.html" target="_self " style="font-size: 30pt;"><button style="background-color:brown;border-color:crimson;font-size: 20pt"><b>Try Again</b></button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            
+           
+        </header>
+    
+        <script> 
+            var lovedata=Math.random()*100;
+           var lovedata=Math.floor(lovedata);    
+        document.getElementById('lovevalue').value=lovedata + "%";
+        var rit=sessionStorage.getItem("textvalue");
+            if(rit=="ritik")
+        {
+            
+        document.getElementById('lovevalue').value=99 + "%";
+            var results= document.createElement("img");
+                   results.src="tenor4.gif";
+                   document.body.appendChild(results);
+                   results.style.width="800px";
+
+        }
+        else if(lovedata>=70)
+               {
+                   var result= document.createElement("img");
+                   result.src="tenor.gif";
+                   document.body.appendChild(result);
+                   result.style.width="600px";
+               }
+            
+            
+            else if((lovedata>=40) && (lovedata<=70))
+               {
+                   var results= document.createElement("img");
+                   results.src="tenor3.gif";
+                   document.body.appendChild(results);
+                   results.style.width="600px";
+               }
+            
+            
+            else
+               {
+                   var resultt= document.createElement("img");
+                   resultt.src="tenor2.gif";
+                   document.body.appendChild(resultt);
+                   resultt.style.width="600px";
+               }
+        
+        
+       </script>
+        </body>
+
+        
+        </html>
